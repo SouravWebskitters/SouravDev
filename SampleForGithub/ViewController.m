@@ -15,11 +15,12 @@
 @implementation ViewController
 
 @synthesize lblMiddleMsg;
+@synthesize btnRevert;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    btnRevert.hidden = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -33,6 +34,13 @@
 - (IBAction)btnTapped:(id)sender {
     
     lblMiddleMsg.text = @"Value hanged ontap";
+    btnRevert.hidden = NO;
     
+}
+
+- (IBAction)revertTapped:(id)sender {
+    
+    lblMiddleMsg.text = @"Sample 4 Github";
+    btnRevert.hidden = YES;
 }
 @end

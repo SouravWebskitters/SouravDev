@@ -10,8 +10,10 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lblMiddleMsg;
+@property (weak, nonatomic) IBOutlet UIButton *btnRevert;
 
 - (IBAction)btnTapped:(id)sender;
+- (IBAction)revertTapped:(id)sender;
 
 @end
 
