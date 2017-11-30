@@ -14,8 +14,12 @@
 
 @implementation ViewController
 
+@synthesize lblMiddleMsg;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,4 +30,9 @@
 }
 
 
+- (IBAction)btnTapped:(id)sender {
+    
+    lblMiddleMsg.text = @"Value hanged ontap";
+    
+}
 @end
